@@ -982,7 +982,7 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /><slave name="gcd_ci_0" baseAddress="0" addressSpan="1" clockCycleType="COMBINATORIAL" /></info>]]></parameter>
+  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /><slave name="gcd_ci_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /></info>]]></parameter>
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
@@ -2608,11 +2608,6 @@
    kind="clock"
    version="18.1"
    start="System_PLL.sys_clk"
-   end="gcd_ci_0.clock" />
- <connection
-   kind="clock"
-   version="18.1"
-   start="System_PLL.sys_clk"
    end="VGA_Subsystem.sys_clk" />
  <connection
    kind="clock"
@@ -2952,11 +2947,6 @@
    version="18.1"
    start="System_PLL.reset_source"
    end="Char_LCD_16x2.reset" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="System_PLL.reset_source"
-   end="gcd_ci_0.reset" />
  <connection
    kind="reset"
    version="18.1"

@@ -1324,11 +1324,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[3]",
+					"name" : "SW[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[3]",
+					"name" : "KEY[3]",
 					"strict" : false
 				},
 				{
