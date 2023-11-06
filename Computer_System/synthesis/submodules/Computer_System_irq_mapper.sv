@@ -22,7 +22,7 @@
 // Parameters
 //   NUM_RCVRS        : 11
 //   SENDER_IRW_WIDTH : 32
-//   IRQ_MAP          : 0:6,1:7,2:23,3:17,4:10,5:9,6:1,7:11,8:8,9:0,10:2
+//   IRQ_MAP          : 0:0,1:1,2:2,3:3,4:4,5:5,6:6,7:7,8:8,9:9,10:10
 //
 // -------------------------------------------------------
 
@@ -61,17 +61,17 @@ module Computer_System_irq_mapper
     always @* begin
 	sender_irq = 0;
 
-        sender_irq[6] = receiver0_irq;
-        sender_irq[7] = receiver1_irq;
-        sender_irq[23] = receiver2_irq;
-        sender_irq[17] = receiver3_irq;
-        sender_irq[10] = receiver4_irq;
-        sender_irq[9] = receiver5_irq;
-        sender_irq[1] = receiver6_irq;
-        sender_irq[11] = receiver7_irq;
+        sender_irq[0] = receiver0_irq;
+        sender_irq[1] = receiver1_irq;
+        sender_irq[2] = receiver2_irq;
+        sender_irq[3] = receiver3_irq;
+        sender_irq[4] = receiver4_irq;
+        sender_irq[5] = receiver5_irq;
+        sender_irq[6] = receiver6_irq;
+        sender_irq[7] = receiver7_irq;
         sender_irq[8] = receiver8_irq;
-        sender_irq[0] = receiver9_irq;
-        sender_irq[2] = receiver10_irq;
+        sender_irq[9] = receiver9_irq;
+        sender_irq[10] = receiver10_irq;
     end
 
 endmodule
